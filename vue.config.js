@@ -1,6 +1,7 @@
 const env = process.env;
 const path = require('path');
 module.exports = Object.assign({
+  // lintOnSave: false,
   devServer: {
     proxy: {
       '/api': {
@@ -13,5 +14,14 @@ module.exports = Object.assign({
     open: true, //自动打开
     inline: true
   },
+
   publicPath: '/'
+  // module: {
+  //   rules: [
+  //     {
+  //       test: /\.less$/,
+  //       loader: 'style-loader!css-loader!less-loader'
+  //     }
+  //   ]
+  // }
 });

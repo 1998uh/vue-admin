@@ -1,5 +1,9 @@
 import Vue from 'vue';
-import VueRouter from 'vue-router';
-
-Vue.use(VueRouter);
+import Router from 'vue-router';
+import routes from './routers';
+Vue.use(Router);
+const router = new Router({
+  mode: 'history',
+  routes
+});
 export default router;
